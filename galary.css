@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{  
+    display: flex;
+    flex-direction:row-reverse;
+    height: 7vh;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.733);
+}
+.name{
+    width: 20%;
+    height: 100%;
+    display: flex;
+   justify-content:center;
+   align-items: center;
+   color: white;
+font-size: 100%;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.name:hover{
+    opacity: 0.6;
+    color:#8f8069;
+}
+a{
+    text-decoration: none;
+}
+.body{
+    height: 490vh;
+    width:100%;
+    background-color:#8f8069;
+}
+footer{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+   color: white;
+   height: 11vh;
+   width: 100%;
+   background-color: rgba(0, 0, 0, 0.733);
+  position: relative;
+  bottom: 0;
+}
+.all{
+   width: 100vw;
+   display: flex;
+   flex-direction: column;
+   height: 500vh;
+}
+.house{
+    height: 93vh;
+    width: 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   top: 7vh;
+  text-align: center;
+    direction: rtl;
+    z-index: 1;
+    gap:0.5% ;
+    position: relative;
+}
+.choise{
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 47%;
+    background-color:rgba(187, 130, 130,0);
+    color:white;
+    font-size: 50px;
+    animation: 10s ease-in-out  30 normal forwards sss;
+}
+@keyframes sss{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-55vw);
+    }     
+   }
+.clasic,.modern,.village{
+    display: grid;
+    place-content: center;
+    width: 33%;
+    height: 100%;
+    color:white;
+    font-size: 250%;
+    position: relative;   
+}
+.bigimg{
+    position: absolute;
+    top: 0;
+   right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.smallimg{
+    display: none;
+}
+.clasic:hover,.modern:hover,.village:hover{
+    .chets{
+        animation: 2s ease-in-out  30 normal forwards slide; 
+    }
+} 
+@keyframes slide{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(50px);
+    }  
+    100%{
+        transform: translateY(0);
+    }     
+   }
+.chets{
+    width: 20vw;
+    z-index: 1;
+}
+.pictures{
+   display: flex;
+   flex-direction: column;
+   position: relative;
+   top: 7vh;
+   height: 400vh;
+   width: 100%;
+   gap:0.5% ;
+}
+#p_modern,#p_clasic,#p_village{
+    display: flex;
+    flex-direction: column;
+ justify-content: center;
+  align-content: center;
+  height: 32%;
+    width: 100%;
+    gap: 3%;
+    color: white;
+}
+.row img{ 
+    height: 100%;
+    width: 100%;
+}
+.row img:hover{
+    transform: scale(1.2);
+  transition: transform 1s ease;
+    cursor: pointer;
+}
+.write{ 
+    position: absolute;
+    top: 85%;
+    bottom: 0;
+    right: 0;
+    left: 0;  
+    width: 100%; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 20%;
+    width: 100%;
+    flex-wrap: nowrap;
+    direction: rtl;
+}
+.deco{
+    position: relative;
+    height: 100%;
+    width: 21%;
+    display: flex;
+    justify-content: space-around;
+}
+h2{
+    text-align: center;
+    font-size: 60px;
+    color: black;
+}
+@media screen and  (max-width:800px){
+    header{
+        justify-content: center;
+        width: 100%;
+    }
+    .name{
+        width: 20%;
+       font-size: 70%;
+    }
+    .house{
+        flex-direction: column;
+        font-size: 100%;
+    }
+    .village,.modern,.clasic{
+        display: flex;
+        flex-direction:row ;
+        width: 100%;
+        height: 33%;
+        direction: rtl;   
+    }
+    .bigimg{
+        display: none;
+    }
+    .smallimg{
+        display: block;
+        position: absolute;
+        top: 0;
+       right: 0;
+        width: 100%;
+        height: 100%;
+    }
+    h1{
+        font-size: 100%;
+        z-index: 2;
+       position: absolute;
+       top: 25%;
+       right: 20%;
+       color: white;
+    }
+    .chets{
+        width: 20%;
+        height: 25%;
+        position: absolute;
+       top: 30%;
+       left: 5%;
+    }
+    .choise{
+        width: 100%;
+        font-size: 120%;
+        z-index: 2;
+    }
+    footer{
+        font-size: 250%;
+    }
+        .all{
+            height: 313vh;
+        }
+        .body{
+            height: 303vh;
+        }
+        .pictures{
+            height: 207vh;
+        }
+        .write{
+            font-size: 10px;
+        }
+        footer{
+            font-size: 7vh;
+        }}
+    
