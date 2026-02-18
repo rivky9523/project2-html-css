@@ -1,6 +1,6 @@
 lets see a few pictures!!
 
-> ![Dashboard](screenshots/dashboard.png)- 🎨 **Modern UI**: Clean, contemporary design with gradient accents
+> ![Dashboard](video/modern.mp4)- 🎨 **Modern UI**: Clean, design with gradient accents
 
 > ![Form](screenshots/form.png)- 📱 **Responsive**: Works seamlessly on desktop, tablet, and mobile devices
 
